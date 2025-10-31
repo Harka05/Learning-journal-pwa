@@ -3,29 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Learning Journal | Home</title>
-  <link rel="stylesheet" href="../css/style.css">
+  <title>Harka | Portfolio & Learning Journal</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+  <!-- HEADER -->
   <header>
-    <h1>My Learning Journal</h1>
+    <div class="logo">Harka</div>
     <nav>
-      <a href="index.html" class="active">Home</a>
-      <a href="journal.html">Journal</a>
-      <a href="about.html">About</a>
-      <a href="projects.html">Projects</a>
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="journal.html">Journal</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
     </nav>
   </header>
 
+
   <main>
-    <section class="intro">
-      <h2>Welcome!</h2>
-      <p>Hello, I’m [Your Name]. This is my learning journal for Mobile Application Development. Here, I’ll share what I learn each week and showcase my projects.</p>
-    </section>
+    <section class="hero">
+  <div class="hero-text">
+    <h1>Hi, I’m <span class="highlight">Harka Adhikari</span></h1>
+    <h2>Creative Developer | AI Enthusiast | Designer | Learner</h2>
+    <p>
+      This website is my personal space to document my journey in Application Development, 
+      showcase my projects, and reflect on what I learn each week.
+    </p>
+    <button onclick="window.location.href='projects.html'">View My Work</button>
+  </div>
+  <div class="hero-img">
+    <img src="images/myphotopng.png" alt="Profile Photo">
+  </div>
+</section>
+
+<section class="featured">
+  <h2>Featured Projects</h2>
+  <div class="project-grid">
+    <div class="project-card">
+      <img src="images/project1.jpg" class="project1" alt="Project 1">
+      <h3>Temperature converter</h3>
+      <p>A responsive temperature converter that allows users to convert between Celsius, Fahrenheit, and Kelvin. Built with JavaScript for real-time conversion.</p>
+    </div>
+    <div class="project-card">
+  <img src="images/BloodinNeed.png" alt="Blood in Need Project">
+  <h3>Blood in Need</h3>
+  <p>
+    A collaborative project with Bipin Sunar. I contributed to HTML and CSS design, creating responsive layouts and improving usability. 
+    This project helps users locate nearby blood banks and hospitals efficiently.
+  </p>
+</div>
+  </div>
+</section>
+
   </main>
 
+
   <footer>
-    <p>© 2025 [Your Name] | University for the Creative Arts</p>
+    <p>© 2025 Harka | Portfolio & Learning Journal | Designed by - Harka Adhikari </p>
   </footer>
+
 </body>
 </html>

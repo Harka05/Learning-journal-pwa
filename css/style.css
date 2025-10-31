@@ -1,62 +1,237 @@
-/* General Reset */
-body {
+/* RESET */
+* {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background: #fdfdfd;
-  color: #333;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Header and Navigation */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fafafa;
+  color: #222;
+  line-height: 1.6;
+}
+
+/* HEADER */
 header {
-  background: #e91e63;
+  background: linear-gradient(90deg, #2e026d, #5f37ff);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
   color: white;
-  padding: 1em 0;
-  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
-nav {
-  margin-top: 0.5em;
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
 }
 
 nav a {
   color: white;
   text-decoration: none;
-  margin: 0 10px;
-  padding: 0.5em 1em;
-  border-radius: 5px;
+  font-weight: 500;
+  transition: 0.3s;
 }
 
 nav a:hover,
 nav a.active {
-  background: white;
-  color: #e91e63;
+  border-bottom: 2px solid white;
 }
 
-/* Layout */
-main {
-  padding: 1.5em;
-  max-width: 800px;
-  margin: auto;
+/* MAIN HERO SECTION */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 5rem auto;
+  padding: 0 2rem;
+  flex-wrap: wrap;
 }
 
-/* Sections */
-section {
-  margin-bottom: 2em;
+.hero-text {
+  flex: 1;
+  min-width: 300px;
 }
 
-/* Footer */
-footer {
+.hero-text h1 {
+  font-size: 2.8rem;
+  color: #2e026d;
+}
+
+.hero-text .highlight {
+  color: #5f37ff;
+}
+
+.hero-text h2 {
+  font-weight: 400;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  max-width: 600px;
+  margin-bottom: 1.5rem;
+  color: #444;
+}
+
+.hero-text button {
+  background-color: #5f37ff;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.6rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero-text button:hover {
+  background-color: #2e026d;
+}
+
+.hero-img img {
+  width: 300px;
+  border-radius: 50%;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+/* FEATURED PROJECTS */
+.featured {
   text-align: center;
-  background: #f1f1f1;
-  padding: 1em 0;
-  margin-top: 2em;
-  font-size: 0.9em;
+  padding: 3rem 1rem;
 }
 
-/* Responsive Design */
-@media (max-width: 600px) {
-  nav a {
-    display: block;
-    margin: 5px 0;
+.featured h2 {
+  color: #2e026d;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+
+.project-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.project-card img {
+  width: 50%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+/* FOOTER */
+footer {
+  background-color: #2e026d;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  margin-top: 3rem;
+}
+
+.journal table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 2rem 0;
+}
+
+.journal th, .journal td {
+  border: 1px solid #ccc;
+  padding: 0.8rem;
+  text-align: left;
+}
+
+.journal th {
+  background-color: #5f37ff;
+  color: white;
+}
+
+.journal tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.journal tr:hover {
+  background-color: #e0d4ff;
+}
+
+
+/* Modern About Section */
+.modern-about {
+  padding: 4rem 2rem;
+  background-color: #f9f9ff;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.about-image img {
+  width: 250px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+.about-text {
+  flex: 1;
+  min-width: 280px;
+}
+
+.about-text h2 {
+  font-size: 2rem;
+  color: #2e026d;
+  margin-bottom: 1rem;
+}
+
+.about-text p {
+  margin-bottom: 1rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-img img {
+    margin-top: 2rem;
   }
 }
